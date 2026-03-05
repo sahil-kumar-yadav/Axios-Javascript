@@ -2,17 +2,98 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Axios by GeekyShows</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axios Tutorial - GS6: Global Axios Defaults</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    #btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #9C27B0;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #btn:hover {
+      background-color: #7B1FA2;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 4px;
+      border-left: 4px solid #9C27B0;
+    }
+    .label {
+      font-weight: bold;
+      color: #666;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .value {
+      font-size: 16px;
+      color: #333;
+      word-wrap: break-word;
+    }
+    .success {
+      color: #4CAF50;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .error {
+      color: #f44336;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    h1 {
+      color: #333;
+    }
+    .info-box {
+      background-color: #e3f2fd;
+      border-left: 4px solid #2196F3;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+    code {
+      background-color: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+  </style>
 </head>
 
 <body>
- <input type="submit" value="Submit" id="btn">
+  <h1>Axios Tutorial - GS6</h1>
+  <p>Topic: Global Axios Defaults</p>
+  
+  <div class="info-box">
+    <strong>What are Global Defaults?</strong><br>
+    Global defaults allow you to set configuration options that apply to all Axios requests in your application.
+    <br><br>
+    <strong>Example:</strong> Setting default <code>Authorization</code> header for all requests.
+  </div>
+  
+  <input type="submit" value="Make Request" id="btn">
+  
+  <div id="result"></div>
 
- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
- <script src="axiosscript.js"></script>
+  <!-- Using latest Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+  <script src="axiosscript.js"></script>
 </body>
 
 </html>
+

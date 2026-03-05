@@ -2,21 +2,115 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Axios by GeekyShows</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axios Tutorial - GS3: Fetch from Remote API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    #btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #btn:hover {
+      background-color: #45a049;
+    }
+    .data-item {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: white;
+      border-radius: 4px;
+      border-left: 4px solid #4CAF50;
+    }
+    .label {
+      font-weight: bold;
+      color: #666;
+      font-size: 14px;
+    }
+    .value {
+      font-size: 16px;
+      color: #333;
+      margin-top: 5px;
+    }
+    h1 {
+      color: #333;
+    }
+    #pid {
+      font-weight: bold;
+      color: #4CAF50;
+    }
+    #title {
+      text-transform: capitalize;
+    }
+    #body {
+      line-height: 1.6;
+    }
+    #allpost {
+      margin-top: 20px;
+    }
+    .post {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border-left: 4px solid #2196F3;
+    }
+    .post-id {
+      font-weight: bold;
+      color: #2196F3;
+    }
+    .post-title {
+      font-weight: bold;
+      margin: 10px 0;
+      text-transform: capitalize;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 10px 0;
+    }
+  </style>
 </head>
 
 <body>
- <input type="submit" value="Submit" id="btn">
- <div id="pid"></div>
- <div id="title"></div>
- <div id="body"></div>
+  <h1>Axios Tutorial - GS3</h1>
+  <p>Topic: Fetch Data from Remote API (GET Request)</p>
+  
+  <input type="submit" value="Fetch Post" id="btn">
+  
+  <div class="data-item">
+    <div class="label">Post ID:</div>
+    <div class="value" id="pid"></div>
+  </div>
+  
+  <div class="data-item">
+    <div class="label">Title:</div>
+    <div class="value" id="title"></div>
+  </div>
+  
+  <div class="data-item">
+    <div class="label">Body:</div>
+    <div class="value" id="body"></div>
+  </div>
 
- <div id="allpost"></div>
- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
- <script src="axiosscript.js"></script>
+  <!-- Container for multiple posts (uncomment in JS to use) -->
+  <div id="allpost"></div>
+
+  <!-- Using latest Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+  <script src="axiosscript.js"></script>
 </body>
 
 </html>
+

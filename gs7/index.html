@@ -2,17 +2,126 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Axios by GeekyShows</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axios Tutorial - GS7: Create Axios Instance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    #btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #FF9800;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #btn:hover {
+      background-color: #F57C00;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 4px;
+      border-left: 4px solid #FF9800;
+    }
+    .label {
+      font-weight: bold;
+      color: #666;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .value {
+      font-size: 16px;
+      color: #333;
+      word-wrap: break-word;
+    }
+    .success {
+      color: #4CAF50;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .error {
+      color: #f44336;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .info {
+      background-color: #fff3e0;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    h1 {
+      color: #333;
+    }
+    .info-box {
+      background-color: #e3f2fd;
+      border-left: 4px solid #2196F3;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+    code {
+      background-color: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    .post {
+      background-color: #f5f5f5;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+    .post-id {
+      font-weight: bold;
+      color: #FF9800;
+    }
+    .post-title {
+      margin-top: 5px;
+    }
+  </style>
 </head>
 
 <body>
- <input type="submit" value="Submit" id="btn">
+  <h1>Axios Tutorial - GS7</h1>
+  <p>Topic: Create Axios Instance</p>
+  
+  <div class="info-box">
+    <strong>What is an Axios Instance?</strong><br>
+    An Axios instance is a pre-configured version of Axios that you can reuse.
+    It allows you to set a base URL, default headers, interceptors, and other 
+    configuration options for a specific API.
+    <br><br>
+    <strong>Benefits:</strong>
+    <ul>
+      <li>DRY (Don't Repeat Yourself) - configure once, use everywhere</li>
+      <li>Easy to maintain - change base URL in one place</li>
+      <li>Separate instances for different APIs</li>
+      <li>Custom interceptors per instance</li>
+    </ul>
+  </div>
+  
+  <input type="submit" value="Make Request" id="btn">
+  
+  <div id="result"></div>
 
- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
- <script src="axiosscript.js"></script>
+  <!-- Using latest Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+  <script src="axiosscript.js"></script>
 </body>
 
 </html>
+

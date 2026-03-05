@@ -2,16 +2,78 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Axios by GeekyShows</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axios Tutorial - GS4: POST Data to API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    #btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #btn:hover {
+      background-color: #1976D2;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 4px;
+      border-left: 4px solid #2196F3;
+    }
+    .label {
+      font-weight: bold;
+      color: #666;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .value {
+      font-size: 16px;
+      color: #333;
+    }
+    .success {
+      color: #4CAF50;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .error {
+      color: #f44336;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
 </head>
 
 <body>
- <input type="submit" value="Submit" id="btn">
- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
- <script src="axiosscript.js"></script>
+  <h1>Axios Tutorial - GS4</h1>
+  <p>Topic: POST Data to API</p>
+  <p><strong>Note:</strong> This example sends data to <code>reqres.in</code> (a test API)</p>
+  
+  <input type="submit" value="POST Data" id="btn">
+  
+  <div id="result"></div>
+
+  <!-- Using latest Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+  <script src="axiosscript.js"></script>
 </body>
 
 </html>
+
